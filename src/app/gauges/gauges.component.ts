@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gauges.component.css']
 })
 export class GaugesComponent implements OnInit {
-
+  pageTitle = 'Gauges Demo';
   constructor() { }
 
   ngOnInit() {
