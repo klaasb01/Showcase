@@ -1,35 +1,36 @@
 <div class="container">
   <div col-sm-12>
-<div class="panel panel-primary ">
-  <div class="panel-heading ">{{pageTitle}}</div>
-  <div class="panel-body">
-    <div class="container-fluid">
-      <div class="col-sm-4">
-        <div class="panel panel-danger">
-          <div class="panel-heading"> CPU </div>
-          <div class="panel-body">
-            Panel Body
+    <div class="panel panel-primary ">
+      <div class="panel-heading ">{{pageTitle}}</div>
+      <div class="panel-body">
+        <div class="container-fluid">
+          <div class="col-sm-4">
+            <div class="panel panel-danger">
+              <div class="panel-heading"> CPU </div>
+              <div class="panel-body">
+                <justgage [options]="options" [max]="max" [value]="value"></justgage>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="panel panel-warning">
-          <div class="panel-heading"> CPU </div>
-          <div class="panel-body">
-            Panel Body
+          <div class="col-sm-4">
+            <div class="panel panel-warning">
+              <div class="panel-heading"> Memory </div>
+              <div class="panel-body">
+                Panel Body
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="panel panel-success">
-          <div class="panel-heading"> CPU </div>
-          <div class="panel-body">
-            Panel Body
+          <div class="col-sm-4">
+            <div class="panel panel-success">
+              <div class="panel-heading"> Network </div>
+              <div class="panel-body">
+                Panel Body
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-</div>
+
