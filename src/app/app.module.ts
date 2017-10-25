@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { JustgageModule } from 'angular2-justgage';
+import { ToastModule, ToastOptions } from 'ng2-toastr/ng2-toastr';
 import { AppComponent } from './app.component';
+
 import { GaugesComponent } from './gauges/gauges.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
-import { ToasterService, ToastComponent, ToasterModule} from 'angular2-toaster';
 
 import { RouterModule } from '@angular/router';
 import { FormsComponent } from './forms/forms.component';
@@ -25,6 +27,8 @@ import { ToastrFormComponent } from './toastr/toastr-form.component';
   imports: [
     JustgageModule,
     BrowserModule,
+    BrowserAnimationsModule,
+    ToastModule.forRoot(),
     RouterModule.forRoot([
       {path: 'welcome', component: WelcomeComponent },
       {path: 'gauges', component: GaugesComponent },
@@ -36,7 +40,7 @@ import { ToastrFormComponent } from './toastr/toastr-form.component';
 
     ])
   ],
-  providers: [ToasterService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
